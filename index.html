@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>QC UI Components Test</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f9; }
+    .component-box { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .tooltip { position: relative; display: inline-block; cursor: pointer; color: #007bff; }
+    .tooltip .tooltiptext { visibility: hidden; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -60px; opacity: 0; transition: opacity 0.3s; }
+    .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #007bff; color: white; }
+  </style>
+</head>
+<body>
+  <h1>Тестування UI Компонентів</h1>
+
+  <div class="component-box">
+    <h3>4. Tabs (Вкладки)</h3>
+    <button onclick="alert('Вкладка 1')">Вкладка 1</button>
+    <button onclick="alert('Вкладка 2')">Вкладка 2</button>
+  </div>
+
+  <div class="component-box">
+    <h3>5. Button (Кнопка)</h3>
+    <button onclick="alert('Кнопку натиснуто!')">Натисни мене</button>
+  </div>
+  
+  <div class="component-box">
+    <h3>6. Text label (Текстова мітка)</h3>
+    <label for="username">Ім'я користувача:</label>
+    <input type="text" id="username" placeholder="Введіть ім'я">
+  </div>
+
+  <div class="component-box">
+    <h3>7. Link (Посилання)</h3>
+    <a href="https://github.com" target="_blank">Перейти на GitHub</a>
+  </div>
+
+  <div class="component-box">
+    <h3>8. Tooltip (Підказка)</h3>
+    <div class="tooltip">Наведіть на мене
+      <span class="tooltiptext">Це підказка!</span>
+    </div>
+  </div>
+
+  <div class="component-box">
+    <h3>9. Dropdown list (Випадаючий список)</h3>
+    <select>
+      <option value="1">Варіант 1</option>
+      <option value="2">Варіант 2</option>
+      <option value="3">Варіант 3</option>
+    </select>
+  </div>
+
+  <div class="component-box">
+    <h3>10. Data grid (Таблиця даних)</h3>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Компонент</th>
+        <th>Статус</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Button</td>
+        <td>Протестовано</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Dropdown</td>
+        <td>В очікуванні</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
